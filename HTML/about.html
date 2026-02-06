@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="../CSS/about.css">
+</head>
+<body>
+       <nav></nav>
+     <div class="page-header">
+    <div class="container header-flex">
+      <h1><strong>About Us
+</strong></h1>
+      <ol>
+        <li><a href="../index.html">Home</a></li>
+        <li>About Us</li>
+      </ol>
+    </div>
+  </div>
+
+  <section class="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="../Utils/about.jpg" alt="">
+        </div>
+        <div class="col-md-6">
+          <h3>About the Company</h3>
+          <ul><p>Climatic Controls was founded in 1990 on the principles of Excellence and Quality. Transformed into a Private Limited company in June of 2018
+
+          </p>
+          <p>Since its founding, it has provided its patrons with competitively priced, functional HVAC installation for air conditioning, heating and ventilation solutions and after sales service.
+
+          </p>
+          <p>Climatic Controls has maintained its position as the most trusted HVAC solution provider including supply, installation, testing, commissioning with value engineering solutions by using skilled, experienced team of engineers and upholding the industry's best standards practices.
+
+          </p>
+          </ul>
+          <p>Based on our countless and varied experiences, we assure you of high- quality, long-lasting systems and practical HVAC solutions.
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+    <footer class="footer"></footer>
+    
+</body>
+
+  <script src="../JS/index.js"></script>
+  <script type="module">
+    import { navBar, navStyle,Footer,footerStyle } from "../JS/component.js";
+
+    document.querySelector("nav").innerHTML = navBar();
+    document.querySelector(".footer").innerHTML = Footer();
+
+    const navstyleTag = document.createElement("style");
+    navstyleTag.innerHTML = navStyle();
+    document.head.appendChild(navstyleTag);
+   
+
+    const footerstyleTag = document.createElement("style");
+    footerstyleTag.innerHTML = footerStyle();
+    document.head.appendChild(footerstyleTag) 
+    </script>
+</html>
